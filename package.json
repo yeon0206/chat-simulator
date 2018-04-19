@@ -2,10 +2,11 @@
   "name": "chat-simulator",
   "version": "1.0.0",
   "description": "Chat simulator",
-  "main": "webpack.config.js",
+  "main": "bundle.js",
   "devDependencies": {
     "css-loader": "^0.28.4",
     "file-loader": "^0.11.2",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^2.30.1",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
@@ -28,5 +29,9 @@
   "bugs": {
     "url": "https://github.com/vanilla-coding/chat-simulator/issues"
   },
-  "homepage": "https://github.com/vanilla-coding/chat-simulator#readme"
+  "homepage": "https://github.com/vanilla-coding/chat-simulator#readme",
+  "dependencies": {
+    "domify": "^1.4.0",
+    "lodash": "^4.17.5"
+  }
 }
