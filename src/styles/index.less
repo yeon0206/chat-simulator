@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One');
+
+body {
+  background-color: #FFF59D;
+  padding: 50px;
+}
+
+h1 {
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
+    color: #03A9F4;
+    font-size: 50px;
+}
+
+.chat-room {
+  border: 5px solid #03A9F4;
+  padding: 50px;
+  height: 100%;
+  overflow: scroll;
+}
+
+.message-box div{
+  position: relative;
+  padding: 5px 20px;
+  margin-top: 10px;
+  display: inline-block;
+	background: #BCE4FF;
+  border-radius: .4em;
+  word-break: break-all;
+}
+
+.message-box div:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-right-color: #BCE4FF;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -6px;
+	margin-left: -10px;
+}
+
+.user-connection-box {
+  border: 1px solid blue;
+  margin-top: 10px;
+}
+
+.update-user-info-box {
+  border: 1px solid purple;
+  margin-top: 10px;
+}
+
+.update-user-message-box {
+  border: 1px solid green;
+  margin-top: 10px;
+}
+
+.delete-user-message-box {
+  border: 1px solid peru;
+  margin-top: 10px;
+}
+
+.user-disconnection-box {
+  border: 1px solid red;
+  margin-top: 10px;
+}
