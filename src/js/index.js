@@ -1,8 +1,10 @@
 import Model from './cinderella/Model';
 import CHAT_DATA from '../lib/chatHistory.json';
 import ChatBoxUI from './components/ChatBox';
+import OnlineUserUI from './components/OnlineUser';
 import ChatMessageUI from './components/ChatMessage';
 import ChatConnectionUI from './components/ChatConnection';
+import ChatDisConnectionUI from './components/ChatDisConnection';
 
 
 var model = new Model({
@@ -46,3 +48,21 @@ var chatMessage = ChatMessageUI.create({
 });
 
 chatMessage.asyncRender();
+
+var chatConnection = ChatConnectionUI.create({
+  element: window.document.querySelector('.chat-room-container'),
+  model: {
+    data : model.filterByType('connect')
+  }
+});
+
+chatConnection.asyncRender();
+
+var chatDisConnection = ChatDisConnectionUI.create({
+  element: window.document.querySelector('.chat-room-container'),
+  model: {
+    data : model.filterByType('disconnect')
+  }
+});
+
+chatDisConnection.asyncRender();
