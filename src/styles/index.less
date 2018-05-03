@@ -1,13 +1,36 @@
+@import './reset.less';
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One');
 
 body {
-  background-color: #FFF59D;
-  padding: 50px;
+  background-color: #fff;
+  padding: 50px 0;
 }
 
 h1 {
-    font-family: 'Fugaz One', cursive;
-    text-align: center;
-    color: #03A9F4;
-    font-size: 50px;
+  font-family: 'Fugaz One', cursive;
+  text-align: center;
+  color: #03A9F4;
+  font-size: 50px;
+}
+
+#root {
+  border: 1px dashed blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+#nav {
+  width: 230px;
+  flex-shrink: 0;
+  background: #4d394b;
+}
+
+#chat-room {
+  background: #fff;
+  height: 100%;
+  overflow: scroll;
 }

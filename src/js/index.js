@@ -1,5 +1,9 @@
-import Model from './cinderella/Model'
+import Model from './cinderella/Model';
 import CHAT_DATA from '../lib/chatHistory.json';
+import ChatBoxUI from './components/ChatBox';
+import ChatMessageUI from './components/ChatMessage';
+import ChatConnectionUI from './components/ChatConnection';
+
 
 var model = new Model({
   data : CHAT_DATA,
@@ -23,3 +27,13 @@ var model = new Model({
     });
   }
 });
+
+var chatBox = ChatBoxUI.create({
+  element: window.document.getElementById('root'),
+  model: {
+    title: '테스트입니다',
+    user: '권'
+  }
+});
+
+chatBox.render();
