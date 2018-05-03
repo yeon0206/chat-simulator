@@ -37,3 +37,12 @@ var chatBox = ChatBoxUI.create({
 });
 
 chatBox.render();
+
+var chatMessage = ChatMessageUI.create({
+  element: window.document.querySelector('.chat-room-container'),
+  model: {
+    data : model.filterByType('message')
+  }
+});
+
+chatMessage.asyncRender();
