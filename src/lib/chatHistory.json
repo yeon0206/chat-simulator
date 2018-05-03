@@ -1,5 +1,27 @@
 [
   {
+    "delta": 250,
+    "payload": {
+      "type": "connect",
+      "user": {
+        "id": 1,
+        "user_name": "taco",
+        "display_name": "Taco Spolsky"
+      }
+    }
+  },
+  {
+    "delta": 500,
+    "payload": {
+      "type": "connect",
+      "user": {
+        "id": 2,
+        "user_name": "chorizo",
+        "display_name": "Chorizo"
+      }
+    }
+  },
+  {
     "delta": 1000,
     "payload": {
       "type": "message",
@@ -60,7 +82,7 @@
     "payload": {
       "type": "message",
       "user": {
-        "id": 1,
+        "id": 3,
         "user_name": "pete",
         "display_name": "Pete the Computer"
       },
