@@ -66,3 +66,8 @@ var chatDisConnection = ChatDisConnectionUI.create({
 });
 
 chatDisConnection.asyncRender();
+
+console.log(chatMessage)
+
+console.log(model.filterByType('update'));
+console.log(model.findItemByUserId('update'));

@@ -6,13 +6,15 @@
   </li>
   <li class="chat-message-content">
     <div class="content-head">
-      <div>
-        <%= payload.user.display_name %>
+      <div data-user-id ="<%= payload.user.id %>">
+        <h2><%= payload.user.display_name %></h2>
       </div>
-      <div>11:14AM</div>
+      <div>
+        <h2>11:14AM</h2>
+      </div>
     </div>
     <div class="content-body">
-      joined #javascript-qna
+      <h2>joined #javascript-qna</h2>
     </div>
   </li>
 </ul>

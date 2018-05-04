@@ -47,4 +47,8 @@ View.prototype.asyncRender = function () {
   return this.element;
 };
 
+View.prototype.updateUserInfo = function () {
+
+}
+
 export default View;
